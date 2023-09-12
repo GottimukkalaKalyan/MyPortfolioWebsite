@@ -7,7 +7,6 @@
    flex-wrap: wrap;
    color: white !important;
    background-image: url("https://res.cloudinary.com/dpflxdsri/image/upload/v1694526361/Black_and_Blue_Modern_Gradient_Zoom_Virtual_Background_1_s6crvi.png") !important;
-   background-size: cover;
    scroll-behavior: smooth;
 }
 .heading{
@@ -17,14 +16,15 @@
 .kalyan-photo-and-name-container{
    height: 100%;
    width: 100%;
-   min-width: 410px;
    flex-grow: 1;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   background-color: none !important;
+   /* border: 2px solid red; */
+   flex-shrink: 1;
 }
+
 .last-one{
    display: flex;
    text-decoration: none;
@@ -92,13 +92,13 @@
    display: flex;
    flex-direction: column;
    padding: 20px;
-   min-width: 410px;
+   /* min-width: 410px; */
    flex-grow: 1;
    justify-content: flex-start;
    text-align: start;
    overflow-y: auto;
 }
-@media screen and (max-width:500px){
+@media screen and (max-width:600px){
    .kalyan-bio-and-details-container{
       background-image: url("https://res.cloudinary.com/dpflxdsri/image/upload/v1694526361/Black_and_Blue_Modern_Gradient_Zoom_Virtual_Background_1_s6crvi.png") !important;
       border-top: 10px solid rgb(75, 84, 181);
