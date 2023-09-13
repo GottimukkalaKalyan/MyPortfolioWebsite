@@ -8,6 +8,7 @@
    color: white !important;
    background-image: url("https://res.cloudinary.com/dpflxdsri/image/upload/v1694526361/Black_and_Blue_Modern_Gradient_Zoom_Virtual_Background_1_s6crvi.png") !important;
    scroll-behavior: smooth;
+   user-select:none;
 }
 .heading{
    margin: 0px;
@@ -40,7 +41,7 @@
 }
 .image-container{
    background-color: black ;
-   width: 265px;
+   width: 190px;
    height: 290px;
    display: flex;
    align-items: center;
@@ -204,13 +205,34 @@ p{
    justify-content: center;
    align-items: center;
 }
-
-
+.project-list-item{
+   list-style-type:none;
+   margin-bottom: 5px;
+}
+.project-link{
+   display: flex;
+   width: fit-content;
+}
+.and-many-more-para{
+   text-align: end;
+   padding: 0px;
+   margin: 0px;
+}
+.thankyou-para{
+   padding: 0px;
+   margin: 0px;
+}
+.resume-para{
+   margin: 0px;
+   margin-left: 10px;
+   padding: 0px;
+}
 
 /* Footer */
 .footer{
    width: 100%;
 }
-.thankyou{
-   text-align: center;
+.thankyou-container{
+   display: flex;
+   align-items: center;
 }

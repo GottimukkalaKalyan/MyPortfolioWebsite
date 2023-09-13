@@ -3,20 +3,18 @@ import {Component} from "react"
 import "./index.css"
 
 class Home extends Component{
-      
    render(){ 
       return(
          <div className="kalyan-bio">
             <div className="kalyan-photo-and-name-container">
-               <div className="image-container mb-3 shadow-lg bg-body-tertiary rounded d-none">
-                  <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694514115/PROFILE_mbtsld.jpg" alt="profile" className="profile-photo"/>
-                  <a className="btn btn-outline-dark resume-button" href="https://s3-ap-south-1.amazonaws.com/nkb-backend-ccbp-media-static/ccbp_prod/media/resume_generated/KALYAN_2023-09-04-185346.pdf" download>Resume</a>
+               <div className="image-container mb-3 shadow-lg bg-body-tertiary rounded">
+                  <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694586899/1687519554643-01_pwhrfr.jpg" alt="profile" className="profile-photo"/>
                </div>
-               <div className="main-card mb-3">
+               <div className="main-card mb-3 d-none">
                   <div className="card">
                      <div className="flip-card">
                         <div className="flip-front image-container mb-3 shadow-lg bg-body-tertiary rounded">
-                           <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694514115/PROFILE_mbtsld.jpg" alt="profile" className="profile-photo"/>
+                           <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694586899/1687519554643-01_pwhrfr.jpg" alt="profile" className="profile-photo"/>
                         </div>
                         <div className="flip-back">
                            <p>I have hands on experience with Technologies like HTML, CSS, JavaScript, Python, ReactJS, NodeJS, SQL</p>
@@ -103,10 +101,84 @@ class Home extends Component{
                </p>
                <p className="p-3 pt-0">Feel free to reach out to me to discuss exciting projects, collaborate on innovative ideas, or simply have a tech chat. Let's build amazing things together!</p>
                </div>
-               <div className="footer">
-               <div className="alert alert-primary thankyou" role="alert">
-                  Thankyou for visiting <i className="bi bi-heart"></i>
-               </div>
+               <ul className="alert alert-success thankyou" role="alert">
+                  <h1 className="side-headings">My Projects:</h1>
+                  <hr />
+                  <li className="project-list-item">
+                     <b><a href="https://gkflipcart.ccbp.tech" target="_blank">Nxt Trendz</a><br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#40; ECommerce Clone - Amazon, Flipkart &#41;</b>
+                     <p className="mb-1">Created a modern e-commerce experience with a design inspired by Amazon and Flipkart.</p>
+                     <ul className="mt-0">
+                        <li className="matter-para">
+                           Implemented pages for Login, Products, and Product details with React Router, React components, and form inputs.
+                        </li>
+                        <li className="matter-para">
+                           Secured user data with JWT tokens, REST API calls, and local storage.
+                        </li>
+                        <p className="p-0"><b>Technologies used: </b> React JS, JS, CSS, Bootstrap, Routing, REST API Calls, Local Storage, JWT Token, Authorization, Authenticatio</p>
+                     </ul>
+                  </li>
+                  <hr />
+
+                  <li className="project-list-item">
+                     <b><a href="https://kalyanresturant.ccbp.tech/" target="_blank">Food Munch</a></b>
+                     <p className="mb-1">&nbsp;&nbsp;&nbsp;&nbsp;Developed a responsive website for Food Store where users can see a list of food items, detailed information about a food item, offers</p>
+                     <ul className="mt-0">
+                        <li className="matter-para">
+                           Designed page using following HTML structure elements like li, header, article, footer elements and
+                           different bootstrap components to show different sections in the website and different bootstrap classes
+                           for responsiveness through mobile-first approach
+                        </li>
+                        <li className="matter-para">
+                           Implemented product youtube videos by using bootstrap embed and model components.
+                        </li>
+                        <p className="p-0"><b>Technologies used: </b>  HTML, CSS, Bootstrap</p>
+                     </ul>
+                  </li>
+                  <hr />
+
+                  <li className="project-list-item">
+                     <b><a href="https://gktodos.ccbp.tech/" target="_blank">Todos Application</a></b>
+                     <p className="mb-1">&nbsp;&nbsp;&nbsp;&nbsp;Developed persistent todo application with CRUD operations to track list of tasks</p>
+                     <ul className="mt-0">
+                        <li className="matter-para">
+                           Displayed list of todos with HTML list elements, styled todo list using CSS, Bootstrap
+                        </li>
+                        <li className="matter-para">
+                           Implemented todo crud operations by using JavaScript event listeners and updated UI dynamically by
+                           using JavaScript DOM operations.
+                        </li>
+                        <li className="matter-para">
+                           Used Arrays, Objects and their methods during todolist CRUD Operations, Persisted todo list state on
+                           page reloads using local storage methods.
+                        </li>
+                        <p className="p-0"><b>Technologies used: </b> HTML, CSS, JS, Bootstrap</p>
+                     </ul>
+                  </li>
+                  <hr />
+
+                  <li className="project-list-item">
+                     <b><a href="https://kalyanbrowser.ccbp.tech" target="_blank" className="project-link">Wikipedia Search Application</a></b>
+                     <p className="mb-1">&nbsp;&nbsp;&nbsp;&nbsp;A custom Wikipedia search application that provides a simplified and intuitive way for users to access and view
+                        relevant information. With the ability to easily search for and view curated results, users can dive deeper into
+                        their interests with just a click.</p>
+                     <ul className="mt-0">
+                        <li className="matter-para">
+                           Streamlined search results with HTML list elements, styled for a modern and user-friendly interface
+                           using CSS, Bootstrap and responsive design.
+                        </li>
+                        <li className="matter-para">
+                           Effortlessly access information with asynchronous fetch GET HTTP API calls and the option to open the
+                           desired result in a new tab for further exploration.
+                        </li>
+                        <p className="p-0"><b>Technologies used: </b> HTML, CSS, JS, REST API Calls, Bootstrap</p>
+                     </ul>
+                  </li>
+                  <hr />
+                  <p className="and-many-more-para">and many more....</p>
+               </ul>
+               <div className="alert alert-primary thankyou-container" role="alert">
+                  <p className="thankyou-para d-none">Thankyou for visiting <i className="bi bi-heart"></i></p>
+                  <p className="resume-para">Please refer my resume for more details.<i className="bi bi-heart"></i></p>
                </div>
             </div>
          </div>
