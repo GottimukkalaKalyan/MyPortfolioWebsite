@@ -116,7 +116,7 @@ class Home extends Component{
                         </li>
                         <p className="p-0"><b>Technologies used: </b> React JS, JS, CSS, Bootstrap, Routing, REST API Calls, Local Storage, JWT Token, Authorization, Authenticatio</p>
                      </ul>
-                     <p>Username:-rahul, Password:- rahul@2021</p>
+                     <p className="alert alert-danger">Username:-rahul, Password:- rahul@2021</p>
                   </li>
                   <hr />
 
