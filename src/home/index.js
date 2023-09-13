@@ -19,7 +19,7 @@ class Home extends Component{
                         <div className="flip-back">
                            <p>I have hands on experience with Technologies like HTML, CSS, JavaScript, Python, ReactJS, NodeJS, SQL</p>
                            <p>Please refer my resume for more details.</p>
-                           <a className="btn btn-outline-dark resume-button" target="_blank" href="https://s3-ap-south-1.amazonaws.com/nkb-backend-ccbp-media-static/ccbp_prod/media/resume_generated/KALYAN_2023-09-04-185346.pdf" download>Resume</a>
+                           <a className="btn btn-outline-dark resume-button" target="_blank" href="https://ibb.co/xzPZg95" download>Resume</a>
                         </div>
                      </div>
                   </div>
@@ -178,7 +178,7 @@ class Home extends Component{
                </ul>
                <div className="alert alert-primary thankyou-container" role="alert">
                   <p className="thankyou-para d-none">Thankyou for visiting <i className="bi bi-heart"></i></p>
-                  <p className="resume-para">Please refer my resume for more details.<i className="bi bi-heart"></i></p>
+                  <p className="resume-para">Please refer my resume for more details. <a className="btn btn-outline-dark resume-button" target="_blank" href="https://drive.google.com/file/d/14CDFeI1XfMw6fpz_LjeliTNgAcO_g4-e/view?usp=drive_link" download><i className="bi bi-download dowmload-icon"></i></a></p>
                </div>
             </div>
          </div>
