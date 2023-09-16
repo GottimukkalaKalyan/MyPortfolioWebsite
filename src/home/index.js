@@ -177,6 +177,51 @@ class Home extends Component{
                   <hr />
                   <p className="and-many-more-para">and many more....</p>
                </ul>
+               <ul className="alert alert-primary">
+               <p className="certifications-tag">Certifications</p>
+               <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                     <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837657/WMKRPEXKVD_page-0001_n7wskd.jpg" class="d-block w-100" alt="..." />
+                     </div>
+                     <div class="carousel-item" data-bs-interval="2000">
+                        <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837657/IZRTOSGADV_page-0001_ly52op.jpg" class="d-block w-100" alt="..." />
+                     </div>
+                     <div class="carousel-item">
+                        <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837656/RLPTWMRZEW_page-0001_kegtyk.jpg" class="d-block w-100" alt="..." />
+                     </div>
+                     <div class="carousel-item">
+                        <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837657/ZRFXGPDQOS_page-0001_bfbild.jpg" class="d-block w-100" alt="..." />
+                     </div>
+                     <div class="carousel-item">
+                        <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837657/REHYWFNWWD_page-0001_luc0db.jpg" class="d-block w-100" alt="..." />
+                     </div>
+                     <div class="carousel-item">
+                        <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837657/KBDXPICXRQ_page-0001_tgwztm.jpg" class="d-block w-100" alt="..." />
+                     </div>
+                     <div class="carousel-item">
+                        <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837658/HOZFUKHALF_1__page-0001_wrnwjb.jpg" class="d-block w-100" alt="..." />
+                     </div>
+                     <div class="carousel-item">
+                        <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837658/NXXURRORPP_udplta.png" class="d-block w-100" alt="..." />
+                     </div>
+                     <div class="carousel-item">
+                        <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837658/DTXUGQVYOT_page-0001_jqhb9q.jpg" class="d-block w-100" alt="..." />
+                     </div>
+                     <div class="carousel-item">
+                        <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837658/VVBRDRFUJS_1__page-0001_iwuwx2.jpg" class="d-block w-100" alt="..." />
+                     </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Next</span>
+                  </button>
+               </div>
+               </ul>         
                <div className="alert alert-primary thankyou-container" role="alert"> 
                   <p className="thankyou-para d-none">Thankyou for visiting <i className="bi bi-heart"></i></p>
                   <p className="resume-para">Please refer my resume for more details. <a className="resume-button" target="_blank" href="https://drive.google.com/file/d/14CDFeI1XfMw6fpz_LjeliTNgAcO_g4-e/view?usp=drive_link" download><i className="bi bi-download dowmload-icon"></i></a></p>
