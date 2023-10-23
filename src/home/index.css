@@ -246,3 +246,21 @@ p{
    font-weight: 500;
    margin-top: 0px;
 }
+.arrow{
+   color: red !important;
+}
+.year-of-study{
+   font-weight: bold;
+   margin-top: 5px;
+}
+.popup-button-container{
+   display: flex;
+   justify-content: flex-end;
+}
+.and-many-more-button{
+   background-color: transparent;
+   border: none;
+}
+.popup-background{
+   background-color: #b7c6f7;
+}
