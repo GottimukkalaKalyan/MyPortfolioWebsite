@@ -1,43 +1,56 @@
-import {Component} from "react"
+import React, {Component} from "react"
+
+import Slider from "react-slick";
+import {Chrono} from "react-chrono"
+
 
 import "./index.css"
 
 class Home extends Component{
+
+   
+    
    render(){ 
+      const settings = {
+         dots: false,
+         infinite: true,
+         slidesToShow: 1,
+         slidesToScroll: 1,
+       };
       return(
          <div className="kalyan-bio">
             <div className="kalyan-photo-and-name-container">
                <div className="image-container mb-3 shadow-lg bg-body-tertiary rounded">
-                  <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694586899/1687519554643-01_pwhrfr.jpg" alt="profile" className="profile-photo"/>
+                  <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1698065350/qjvapsnmhrmdwnx7wgtp.jpg" alt="profile" className="profile-photo"/>
                </div>
                <div className="main-card mb-3 d-none">
                   <div className="card">
                      <div className="flip-card">
                         <div className="flip-front image-container mb-3 shadow-lg bg-body-tertiary rounded">
-                           <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694586899/1687519554643-01_pwhrfr.jpg" alt="profile" className="profile-photo"/>
+                           <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1698065350/qjvapsnmhrmdwnx7wgtp.jpg" alt="profile" className="profile-photo"/>
                         </div>
                         <div className="flip-back">
                            <p>I have hands on experience with Technologies like HTML, CSS, JavaScript, Python, ReactJS, NodeJS, SQL</p>
                            <p>Please refer my resume for more details.</p>
-                           <a className="btn btn-outline-dark resume-button" target="_blank" href="https://ibb.co/xzPZg95" download>Resume</a>
+                           <a className="btn btn-outline-dark resume-button" target="_blank" rel="noreferrer" href="https://ibb.co/xzPZg95" download>Resume</a>
                         </div>
                      </div>
                   </div>
                </div>
-               <h1 className="kalyan-name-heading">kalyan Gottimukkala</h1>
-               <h1 className="kalyan-role-heading m-2">MERN Stack Developer</h1>
+               <h1 className="kalyan-name-heading">Kalyan Gottimukkala</h1>
+               <h1 className="kalyan-role-heading m-2">Full Stack Developer</h1>
                <a href = "mailto: kalyanchakri1438@gmail.com" className="btn btn-light email-button mt-2">Email Me</a>
                <div className="social-media-icons-container">
-                  <a href="https://www.instagram.com/kalyan_gottimukkala/" target="_blank">
+                  <a href="https://www.instagram.com/kalyan_gottimukkala/" target="_blank" rel="noreferrer">
                      <i className="bi bi-instagram social-icon"></i>
                   </a>
-                  <a href="https://twitter.com/Kalyanchakri143" target="_blank">
+                  <a href="https://twitter.com/Kalyanchakri143" target="_blank" rel="noreferrer">
                   <i className="bi bi-twitter social-icon"></i>
                   </a>
-                  <a href="https://m.facebook.com/profile.php?id=100020317927071" target="_blank">
+                  <a href="https://m.facebook.com/profile.php?id=100020317927071" target="_blank" rel="noreferrer">
                   <i className="bi bi-facebook social-icon"></i>
                   </a>
-                  <a href="https://www.linkedin.com/in/kalyan-gottimukkala-b8260b246/" target="_blank">
+                  <a href="https://www.linkedin.com/in/kalyan-gottimukkala-b8260b246/" target="_blank" rel="noreferrer">
                   <i className="bi bi-linkedin social-icon"></i>
                   </a>
                </div>
@@ -46,10 +59,32 @@ class Home extends Component{
             <div className="kalyan-bio-and-details-container" id="kalyan-bio-and-details-container">
                <div className="alert alert-primary">
                   <h1 className="side-headings">About Me</h1>
-                  <p className="p-3 pt-0 pb-0 mb-0">Hello! I'm  <b className="name">KALYAN GOTTIMUKKALA</b>, a passionate and enthusiastic MERN &#40;SQL, Express.js, React.js, Node.js&#41; stack developer, 
+                  <p className="p-3 pt-0 pb-0 mb-0">Hello! I'm  <b className="name">KALYAN GOTTIMUKKALA</b>, a passionate and enthusiastic FULL &#40;SQL, Express.js, React.js, Node.js&#41; stack developer, 
                      ready to embark on an exciting journey in the world of web development.
                      I bring a dynamic mix of skills and a hunger for continuous learning to create engaging and user-friendly web applications.
                   </p>
+               </div>
+               <div className="alert alert-primary">
+                  <h1 className="side-headings">Education</h1>
+                  <ul className="skills-container mt-0">
+                     <li className="matter-para">
+                        <b>Nxtwave Disruptive Technologies:</b> Industry Ready Certification in Full-stack Development 
+                         
+                        <p className="year-of-study">Sep 22 - Ongoing</p>
+                     </li>
+                     <li className="matter-para">
+                        <b>MKR Government Degree College, DEVARAKONDA: </b>  B.Com (Bachelor of Commerce) Computer Applications (7.19 CGPA)
+                        <p className="year-of-study">2019 - 2022</p>
+                     </li>
+                     <li className="matter-para">
+                        <b>Government Junior College, Haliya: </b>  Intermediate MPC (63.0%)
+                        <p className="year-of-study">2017 - 2019</p>
+                     </li>
+                     <li className="matter-para">
+                        <b>ZPHS Haliya, Nalgonda: </b>   Secondary School Of Certificate (8.3 CGPA)
+                        <p className="year-of-study">2016 - 2017</p>
+                     </li>
+                  </ul>
                </div>
                <div className="alert alert-primary">
                   <h1 className="side-headings mt-3">Skills Highlights:</h1>
@@ -105,7 +140,7 @@ class Home extends Component{
                   <h1 className="side-headings">My Projects:</h1>
                   <hr />
                   <li className="project-list-item">
-                     <b><a href="https://gkflipcart.ccbp.tech" target="_blank">Nxt Trendz</a><br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#40; ECommerce Clone - Amazon, Flipkart &#41;</b>
+                     <b><a href="https://gkflipcart.ccbp.tech" target="_blank" rel="noreferrer">Nxt Trendz</a><br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#40; ECommerce Clone - Amazon, Flipkart &#41;</b>
                      <p className="mb-1">Created a modern e-commerce experience with a design inspired by Amazon and Flipkart.</p>
                      <ul className="mt-0">
                         <li className="matter-para">
@@ -121,7 +156,7 @@ class Home extends Component{
                   <hr />
 
                   <li className="project-list-item">
-                     <b><a href="https://kalyanresturant.ccbp.tech/" target="_blank">Food Munch</a></b>
+                     <b><a href="https://kalyanresturant.ccbp.tech/" target="_blank" rel="noreferrer">Food Munch</a></b>
                      <p className="mb-1">&nbsp;&nbsp;&nbsp;&nbsp;Developed a responsive website for Food Store where users can see a list of food items, detailed information about a food item, offers</p>
                      <ul className="mt-0">
                         <li className="matter-para">
@@ -136,9 +171,8 @@ class Home extends Component{
                      </ul>
                   </li>
                   <hr />
-
                   <li className="project-list-item">
-                     <b><a href="https://gktodos.ccbp.tech/" target="_blank">Todos Application</a></b>
+                     <b><a href="https://gktodos.ccbp.tech/" target="_blank" rel="noreferrer">Todos Application</a></b>
                      <p className="mb-1">&nbsp;&nbsp;&nbsp;&nbsp;Developed persistent todo application with CRUD operations to track list of tasks</p>
                      <ul className="mt-0">
                         <li className="matter-para">
@@ -158,7 +192,7 @@ class Home extends Component{
                   <hr />
 
                   <li className="project-list-item">
-                     <b><a href="https://kalyanbrowser.ccbp.tech" target="_blank" className="project-link">Wikipedia Search Application</a></b>
+                     <b><a href="https://kalyanbrowser.ccbp.tech" target="_blank" rel="noreferrer" className="project-link">Wikipedia Search Application</a></b>
                      <p className="mb-1">&nbsp;&nbsp;&nbsp;&nbsp;A custom Wikipedia search application that provides a simplified and intuitive way for users to access and view
                         relevant information. With the ability to easily search for and view curated results, users can dive deeper into
                         their interests with just a click.</p>
@@ -175,56 +209,87 @@ class Home extends Component{
                      </ul>
                   </li>
                   <hr />
-                  <p className="and-many-more-para">and many more....</p>
-               </ul>
-               <ul className="alert alert-primary">
-               <p className="certifications-tag">Certifications</p>
-               <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                     <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837657/WMKRPEXKVD_page-0001_n7wskd.jpg" class="d-block w-100" alt="..." />
-                     </div>
-                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837657/IZRTOSGADV_page-0001_ly52op.jpg" class="d-block w-100" alt="..." />
-                     </div>
-                     <div class="carousel-item">
-                        <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837656/RLPTWMRZEW_page-0001_kegtyk.jpg" class="d-block w-100" alt="..." />
-                     </div>
-                     <div class="carousel-item">
-                        <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837657/ZRFXGPDQOS_page-0001_bfbild.jpg" class="d-block w-100" alt="..." />
-                     </div>
-                     <div class="carousel-item">
-                        <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837657/REHYWFNWWD_page-0001_luc0db.jpg" class="d-block w-100" alt="..." />
-                     </div>
-                     <div class="carousel-item">
-                        <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837657/KBDXPICXRQ_page-0001_tgwztm.jpg" class="d-block w-100" alt="..." />
-                     </div>
-                     <div class="carousel-item">
-                        <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837658/HOZFUKHALF_1__page-0001_wrnwjb.jpg" class="d-block w-100" alt="..." />
-                     </div>
-                     <div class="carousel-item">
-                        <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837658/NXXURRORPP_udplta.png" class="d-block w-100" alt="..." />
-                     </div>
-                     <div class="carousel-item">
-                        <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837658/DTXUGQVYOT_page-0001_jqhb9q.jpg" class="d-block w-100" alt="..." />
-                     </div>
-                     <div class="carousel-item">
-                        <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837658/VVBRDRFUJS_1__page-0001_iwuwx2.jpg" class="d-block w-100" alt="..." />
+                  <p className="and-many-more-para d-none">and many more....</p>
+                  <div className="popup-button-container">
+                     <button type="button" class="and-many-more-button" data-bs-toggle="modal" data-bs-target="#exampleModal" disabled>
+                        and many more...
+                     </button>
+                  </div>
+                  <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                     <div className="modal-dialog">
+                        <div className="modal-content p-2 popup-background">
+                           <div className="modal-header">
+                              <h1 className="modal-title fs-5" id="exampleModalLabel">All Projects</h1>
+                              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                           </div>
+                           <p>I'm working on it....</p>
+                           <ul className="modal-body alert alert-success thankyou d-none">
+                              <li className="project-list-item ">
+                                 <b><a href="https://kalyanbrowser.ccbp.tech" target="_blank" rel="noreferrer" className="project-link">Wikipedia Search Application</a></b>
+                                 <p className="mb-1">&nbsp;&nbsp;&nbsp;&nbsp;A custom Wikipedia search application that provides a simplified and intuitive way for users to access and view
+                                    relevant information. With the ability to easily search for and view curated results, users can dive deeper into
+                                    their interests with just a click.</p>
+                                 <ul className="mt-0">
+                                    <li className="matter-para">
+                                       Streamlined search results with HTML list elements, styled for a modern and user-friendly interface
+                                       using CSS, Bootstrap and responsive design.
+                                    </li>
+                                    <li className="matter-para">
+                                       Effortlessly access information with asynchronous fetch GET HTTP API calls and the option to open the
+                                       desired result in a new tab for further exploration.
+                                    </li>
+                                    <p className="p-0"><b>Technologies used: </b> HTML, CSS, JS, REST API Calls, Bootstrap</p>
+                                 </ul>
+                              </li>
+                           </ul>
+                           <div type="modal-footer">
+                           <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                           </div>
+                        </div>
                      </div>
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                     <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                     <span class="visually-hidden">Next</span>
-                  </button>
-               </div>
-               </ul>         
+
+               </ul>
+               <ul className="alert alert-primary">
+                  <div>
+                     <p className="certifications-tag">Certifications</p>
+                     <Slider {...settings}>
+                        <div class="carousel-item active" data-bs-interval="10000">
+                           <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837657/WMKRPEXKVD_page-0001_n7wskd.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                           <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837657/IZRTOSGADV_page-0001_ly52op.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                           <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837656/RLPTWMRZEW_page-0001_kegtyk.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                           <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837657/ZRFXGPDQOS_page-0001_bfbild.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                           <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837657/REHYWFNWWD_page-0001_luc0db.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                           <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837657/KBDXPICXRQ_page-0001_tgwztm.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                           <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837658/HOZFUKHALF_1__page-0001_wrnwjb.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                           <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837658/NXXURRORPP_udplta.png" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                           <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837658/DTXUGQVYOT_page-0001_jqhb9q.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                           <img src="https://res.cloudinary.com/dpflxdsri/image/upload/v1694837658/VVBRDRFUJS_1__page-0001_iwuwx2.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                     </Slider>
+                  </div>
+               </ul>
                <div className="alert alert-primary thankyou-container" role="alert"> 
                   <p className="thankyou-para d-none">Thankyou for visiting <i className="bi bi-heart"></i></p>
-                  <p className="resume-para">Please refer my resume for more details. <a className="resume-button" target="_blank" href="https://drive.google.com/file/d/14CDFeI1XfMw6fpz_LjeliTNgAcO_g4-e/view?usp=drive_link" download><i className="bi bi-download dowmload-icon"></i></a></p>
+                  <p className="resume-para">Please refer my resume for more details. <a className="resume-button" target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/14CDFeI1XfMw6fpz_LjeliTNgAcO_g4-e/view?usp=drive_link" download><i className="bi bi-download dowmload-icon"></i></a></p>
                </div>
             </div>
          </div>
