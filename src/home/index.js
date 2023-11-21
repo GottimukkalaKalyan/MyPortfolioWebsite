@@ -41,14 +41,14 @@ class Home extends Component{
                <h1 className="kalyan-role-heading m-2">Full Stack Developer</h1>
                <a href = "mailto: kalyanchakri1438@gmail.com" className="btn btn-light email-button mt-2">Email Me</a>
                <div className="social-media-icons-container">
+                  <a href="https://github.com/GottimukkalaKalyan" target="_blank" rel="noreferrer">
+                  <i class="bi bi-github social-icon"></i>
+                  </a>
                   <a href="https://www.instagram.com/kalyan_gottimukkala/" target="_blank" rel="noreferrer">
                      <i className="bi bi-instagram social-icon"></i>
                   </a>
                   <a href="https://twitter.com/Kalyanchakri143" target="_blank" rel="noreferrer">
                   <i className="bi bi-twitter social-icon"></i>
-                  </a>
-                  <a href="https://m.facebook.com/profile.php?id=100020317927071" target="_blank" rel="noreferrer">
-                  <i className="bi bi-facebook social-icon"></i>
                   </a>
                   <a href="https://www.linkedin.com/in/kalyan-gottimukkala-b8260b246/" target="_blank" rel="noreferrer">
                   <i className="bi bi-linkedin social-icon"></i>
@@ -67,10 +67,15 @@ class Home extends Component{
                <div className="alert alert-primary">
                   <h1 className="side-headings">Education</h1>
                   <ul className="skills-container mt-0">
+                     {/* <li className="matter-para d-none">
+                        <b>Nxtwave Disruptive Technologies:</b> Industry Ready Certification in Full-stack Development 
+                         
+                        <p className="year-of-study">Sep 22 - Aug 2023</p>
+                     </li> */}
                      <li className="matter-para">
                         <b>Nxtwave Disruptive Technologies:</b> Industry Ready Certification in Full-stack Development 
                          
-                        <p className="year-of-study">Sep 22 - Ongoing</p>
+                        <p className="year-of-study">Sep 22 - Ongoing..</p>
                      </li>
                      <li className="matter-para">
                         <b>MKR Government Degree College, DEVARAKONDA: </b>  B.Com (Bachelor of Commerce) Computer Applications (7.19 CGPA)
